@@ -1,6 +1,5 @@
 package com.okkform.mcp.server.csdn;
 
-import org.springframework.ai.observation.conventions.SpringAiKind;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

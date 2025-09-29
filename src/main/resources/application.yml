@@ -1,0 +1,35 @@
+csdn:
+  api:
+    categories: Java场景面试宝典
+    cookie: uuid_tt_dd=10_20283740260-1744647007643-239950; fid=20_60263077730-1744647008676-435858; __gads=ID=1e674edbd54351cc:T=1744647010:RT=1744719704:S=ALNI_MbtIhs519AkGVFEpSaagRhG-Fd6fQ; __gpi=UID=0000109e1a348bd6:T=1744647010:RT=1744719704:S=ALNI_MYFrQjBlSL-iALN45QP6a0NbwDbbQ; __eoi=ID=027e0611f69460bd:T=1744647010:RT=1744719704:S=AA-AfjZImLputTW8YXBbCvgQht6d; FCNEC=%5B%5B%22AKsRol-gO1xU-yM_dNbwTFgofZNfpRVakj_gap1wn-ajxKv9vGuZeiDqxoUHLTZpYcRVvc512rALlA_U_hkQUcdjlpWe8h8Na8FSj5l7fvC6FrtOU-SSY-kq3myzsYn3pLuoA0tOtKo7FUY7gYWUU9GQiuo_mQXIsQ%3D%3D%22%5D%5D; _ga=GA1.1.489507843.1744647010; _ga_7W1N0GEY1P=GS1.1.1744815625.4.1.1744815894.60.0.0; p_uid=U010000; tfstk=gohtQGTxveQTvDGT-VJhmgOPsgLnMp0ZIcu5ioqGhDnKumCGsSVghrZK01cmoqMAM4rFsVcioNkEq41isdPcM5P4G3xkZQvZ7SPXlMr1SNPQozUXioNfO5zDOcVm9Q0Z7w9CcwE9ZZ3YDSF_cmw_dka0A1sjcP_BJracft1sceLLor6ff-asR9azuSZjcSTKRkzbGPibGUfBWk7_WsHlSeB2RKz1GsGLWJ9n5kTS_XaTEugs6s1fPPeTVVZpf1iBM-nTBXAO4PHIyDzt0Q5a1-HsF5Gv2CFIzvm_JmtRHkM-_jeo63Bzffrq25MpA1Fb9z3YEvYfekDj8XeK6Lb48f0j_8VWaGZmK4hYkj-2903sXYwS1GIPbbc8C5ju2rX6JeBV3RaFilxutB91kfzLqFw13ty08yEkJ36V3RaUJuY6JtW4ny5..; csdn_newcert_qq_51772768=1; c_ins_prid=-; c_ins_rid=1755346380859_724150; c_ins_fref=https://app-blog.csdn.net/; c_ins_fpage=/index.html; c_ins_um=-; ins_first_time=1755346384393; _clck=107ud8j%5E2%5Efz5%5E0%5E1930; c_ab_test=1; https_ydclearance=66efabb42ca21a51996971be-d9ab-42f5-b449-c34b3c754db3-1759164250; dc_session_id=10_1759157051133.201468; c_first_ref=default; c_first_page=https%3A//www.csdn.net/; c_dsid=11_1759157051684.542841; c_segment=14; c-sidebar-collapse=0; Hm_lvt_6bcd52f51e9b3dce32bec4a3997715ac=1756830548,1758815662,1759157053; HMACCOUNT=4536CA18EBC765EF; hide_login=1; SESSION=a833ae1c-451f-43f7-9bb2-37e84fc55bc1; loginbox_strategy=%7B%22taskId%22%3A317%2C%22abCheckTime%22%3A1759157053656%2C%22version%22%3A%22ExpA%22%2C%22nickName%22%3A%22Yummy_J%22%7D; dc_sid=92a20cfcbc866401125c87e00d834ee6; UserName=A_ABai; UserInfo=e5c6beb180d34f67bb1235f971b77715; UserToken=e5c6beb180d34f67bb1235f971b77715; UserNick=ABai8081; AU=231; UN=A_ABai; BT=1759157093611; creative_popup=%7B%22arrowIcon%22%3A%22https%3A//i-operation.csdnimg.cn/images/0f13ec529b6b4195ad99894f76653e56.png%22%2C%22img%22%3A%22https%3A//i-operation.csdnimg.cn/images/2c94ad0f30174b8dbad26e90133598f0.png%22%2C%22imgStyle%22%3A%22height%3A%2088px%3B%22%2C%22darkCfg%22%3A%7B%7D%2C%22role%22%3A%22write%22%2C%22report%22%3A%7B%22spm%22%3A%223001.11121%22%2C%22extra%22%3A%22%22%7D%2C%22style%22%3A%22%22%2C%22arrowIconStyle%22%3A%22%22%2C%22url%22%3A%22https%3A//mp.csdn.net/edit%22%2C%22newTab%22%3Afalse%2C%22userName%22%3A%22A_ABai%22%7D; creative_btn_mp=3; csdn_newcert_A_ABai=1; c_pref=https%3A//www.csdn.net/; c_ref=https%3A//mp.csdn.net/; c_page_id=default; Hm_lpvt_6bcd52f51e9b3dce32bec4a3997715ac=1759157103; log_Id_pv=6; log_Id_view=186; log_Id_click=10; dc_tos=t3cucl
+
+
+spring:
+  application:
+    name: okk-mcp-server-csdn
+
+  ai:
+    mcp:
+      server:
+        name: ${spring.application.name}
+        version: 1.0.0
+
+  main:
+    banner-mode: off
+# stdio 模式打开，sse 模式，注释掉。
+#    web-application-type: none
+
+logging:
+  # stdio 模式打开，sse 模式，注释掉。
+  #  pattern:
+  #    console:
+  file:
+    name: data/log/${spring.application.name}.log
+
+server:
+  port: 8101
+  servlet:
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true
