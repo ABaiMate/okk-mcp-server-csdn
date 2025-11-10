@@ -11,6 +11,7 @@ import com.okkform.mcp.server.csdn.types.properties.CSDNApiProperties;
 import com.okkform.mcp.server.csdn.types.utils.MarkdownConverter;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
+import okhttp3.Request;
 import org.springframework.stereotype.Component;
 import retrofit2.Call;
 import retrofit2.Response;
@@ -39,7 +40,9 @@ public class CSDNPort implements ICSDNPort {
         articleRequestDTO.setDescription(articleFunctionRequest.getDescription());
         articleRequestDTO.setCategories(categories);
 
-        Call<ArticleResponseDTO> call = this.icsdnService.saveArticle(articleRequestDTO);
+        Call<ArticleResponseDTO> call = this.icsdnService.saveArticle(articleRequestDTO, cookie);
+        Request request = call.request();
+        System.out.println(request);
         Response<ArticleResponseDTO> response = call.execute();
 
         log.info("请求CSDN发帖 \nreq:{} \nres:{}", JSON.toJSONString(articleRequestDTO), JSON.toJSONString(response));

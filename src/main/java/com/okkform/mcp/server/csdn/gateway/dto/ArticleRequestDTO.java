@@ -14,7 +14,6 @@ import java.util.List;
 @NoArgsConstructor
 @Data
 public class ArticleRequestDTO {
-
     @JsonProperty("article_id")
     private String articleId;
     @JsonProperty("title")
@@ -33,6 +32,8 @@ public class ArticleRequestDTO {
     private Integer status;
     @JsonProperty("read_type")
     private String readType;
+    @JsonProperty("creation_statement")
+    private Integer creationStatement;
     @JsonProperty("reason")
     private String reason;
     @JsonProperty("original_link")
