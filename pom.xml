@@ -101,7 +101,6 @@
         </dependencies>
     </dependencyManagement>
 
-    <!-- stdio 模式打开，sse 模式，注释掉。 -->
     <build>
         <finalName>mcp-server-csdn-app</finalName>
         <plugins>
@@ -117,17 +116,6 @@
                     </includes>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>3.4.3</version>
-                <configuration>
-                    <mainClass>cn.okkform.mcp.server.csdn.McpServerApplication</mainClass>
-                    <layout>JAR</layout>
-                </configuration>
-            </plugin>
-        </plugins>
-        <!--<plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -153,7 +141,7 @@
                     </excludes>
                 </configuration>
             </plugin>
-        </plugins>-->
+        </plugins>
     </build>
 
 
