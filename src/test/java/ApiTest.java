@@ -73,4 +73,9 @@ public class ApiTest {
 
         log.info("CSDN文章保存成功");
     }
+
+    /*
+    set-cookie uuid_tt_dd=10_30706389210-1764054514797-232813; Max-Age=34560000; Path=/; Domain=.csdn.net;
+set-cookie dc_session_id=10_1764054514797.604240; Max-Age=34560000; Path=/; Domain=.csdn.net;
+     */
 }

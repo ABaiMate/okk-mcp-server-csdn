@@ -1,7 +1,7 @@
 csdn:
   api:
     categories: Java场景面试宝典
-    cookie: p_uid=U010000; csdn_newcert_qq_51772768=1; UN=A_ABai; csdn_newcert_A_ABai=1; c_adb=1; HMACCOUNT=EA61084E768C9BAD; dc_sid=63c6b3c53e90df1000062ba45d9a0065; uuid_tt_dd=10_30706389210-1761530033677-320012; fid=20_17876324523-1761530034267-225027; c_segment=12; Hm_lvt_6bcd52f51e9b3dce32bec4a3997715ac=1760429380,1760943902; is_advert=1; _clck=bavee9%5E2%5Eg0w%5E0%5E1722; vip_auto_popup=1; _clsk=a0tqhf%5E1762755679410%5E1%5E0%5Ey.clarity.ms%2Fcollect; dc_session_id=10_1762761484355.932009; c_first_ref=default; c_first_page=https%3A//mp.csdn.net/mp_blog/manage/article%3Fspm%3D1011.2415.3001.10336; creative_btn_mp=3; c_dsid=11_1762761487330.880332; SESSION=a8c3ed3c-77fc-48e2-8f0f-38d0353326ee; c_pref=https%3A//mp.csdn.net/mp_blog/manage/article%3Fspm%3D1011.2415.3001.10336; c_ref=https%3A//mp.csdn.net/; hide_login=1; UserName=A_ABai; UserInfo=b4305248ef8e405e8f900f809ae4ab9e; UserToken=b4305248ef8e405e8f900f809ae4ab9e; UserNick=ABai8081; AU=231; BT=1762761890534; c_page_id=default; Hm_lpvt_6bcd52f51e9b3dce32bec4a3997715ac=1762761893; log_Id_pv=9; log_Id_view=99; log_Id_click=13; dc_tos=t5i3ws
+    cookie: uuid_tt_dd=10_30706389210-1764042207244-777084; UserName=A_ABai; UserToken=28cf4e40527447778e21b77f29a9acc9;
 
 spring:
   application:
