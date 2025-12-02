@@ -1,12 +1,12 @@
-package com.okkform.mcp.server.csdn.gateway.adapter;
+package com.okkform.mcp.server.csdn.infrastructure.adapter;
 
 import com.alibaba.fastjson.JSON;
 import com.okkform.mcp.server.csdn.domain.adapter.ICSDNPort;
 import com.okkform.mcp.server.csdn.domain.model.ArticleFunctionRequest;
 import com.okkform.mcp.server.csdn.domain.model.ArticleFunctionResponse;
-import com.okkform.mcp.server.csdn.gateway.ICSDNService;
-import com.okkform.mcp.server.csdn.gateway.dto.ArticleRequestDTO;
-import com.okkform.mcp.server.csdn.gateway.dto.ArticleResponseDTO;
+import com.okkform.mcp.server.csdn.infrastructure.gateway.ICSDNService;
+import com.okkform.mcp.server.csdn.infrastructure.gateway.dto.ArticleRequestDTO;
+import com.okkform.mcp.server.csdn.infrastructure.gateway.dto.ArticleResponseDTO;
 import com.okkform.mcp.server.csdn.types.properties.CSDNApiProperties;
 import com.okkform.mcp.server.csdn.types.utils.MarkdownConverter;
 import jakarta.annotation.Resource;
@@ -39,6 +39,10 @@ public class CSDNPort implements ICSDNPort {
         articleRequestDTO.setTags(articleFunctionRequest.getTags());
         articleRequestDTO.setDescription(articleFunctionRequest.getDescription());
         articleRequestDTO.setCategories(categories);
+        articleRequestDTO.setType("original");
+        articleRequestDTO.setReadType("public");
+        articleRequestDTO.setStatus(0);
+        articleRequestDTO.setSource("pc_mdeditor");
 
         Call<ArticleResponseDTO> call = this.icsdnService.saveArticle(articleRequestDTO, cookie);
         Request request = call.request();

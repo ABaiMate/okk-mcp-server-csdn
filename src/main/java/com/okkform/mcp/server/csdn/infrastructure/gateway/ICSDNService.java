@@ -1,7 +1,7 @@
-package com.okkform.mcp.server.csdn.gateway;
+package com.okkform.mcp.server.csdn.infrastructure.gateway;
 
-import com.okkform.mcp.server.csdn.gateway.dto.ArticleRequestDTO;
-import com.okkform.mcp.server.csdn.gateway.dto.ArticleResponseDTO;
+import com.okkform.mcp.server.csdn.infrastructure.gateway.dto.ArticleRequestDTO;
+import com.okkform.mcp.server.csdn.infrastructure.gateway.dto.ArticleResponseDTO;
 import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.Header;

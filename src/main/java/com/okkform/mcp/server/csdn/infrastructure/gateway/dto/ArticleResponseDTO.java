@@ -1,4 +1,4 @@
-package com.okkform.mcp.server.csdn.gateway.dto;
+package com.okkform.mcp.server.csdn.infrastructure.gateway.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.okkform.mcp.server.csdn.domain.model.ArticleFunctionResponse;
