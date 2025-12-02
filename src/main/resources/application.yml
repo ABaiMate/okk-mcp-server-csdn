@@ -16,12 +16,12 @@ spring:
   main:
     banner-mode: off
 # stdio 模式打开，sse 模式，注释掉。
-#    web-application-type: none
+    web-application-type: none
 
 logging:
   # stdio 模式打开，sse 模式，注释掉。
-  #  pattern:
-  #    console:
+  pattern:
+    console:
   file:
     name: data/log/${spring.application.name}.log
 

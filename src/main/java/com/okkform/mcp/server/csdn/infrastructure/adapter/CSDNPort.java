@@ -46,10 +46,22 @@ public class CSDNPort implements ICSDNPort {
 
         Call<ArticleResponseDTO> call = this.icsdnService.saveArticle(articleRequestDTO, cookie);
         Request request = call.request();
-        System.out.println(request);
+        log.info("CSDN发帖请求 req={}", JSON.toJSONString(request));
         Response<ArticleResponseDTO> response = call.execute();
 
-        log.info("请求CSDN发帖 \nreq:{} \nres:{}", JSON.toJSONString(articleRequestDTO), JSON.toJSONString(response));
+        if (!response.isSuccessful()) {
+            // 失败时才打印错误信息，且只打印字符串
+            String errorBody = response.errorBody() != null ? response.errorBody().string() : "null";
+            log.error("CSDN发帖失败 code={} \nreq={} \nerrorBody={}",
+                    response.code(),
+                    JSON.toJSONString(articleRequestDTO),
+                    errorBody);
+        } else {
+            // 成功只打印关键信息
+            log.info("CSDN发帖成功 code={} articleId={}",
+                    response.code(),
+                    response.body() != null ? response.body().getData() : "null");
+        }
 
         if (response.isSuccessful()) {
             ArticleResponseDTO body = response.body();
