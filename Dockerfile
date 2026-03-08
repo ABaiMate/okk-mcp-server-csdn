@@ -1,5 +1,5 @@
 # 基础镜像，可以先执行 docker pull openjdk:17-jdk-slim
-FROM registry.cn-hangzhou.aliyuncs.com/anolis/eclipse-temurin:17-jdk-alpine
+FROM anolis-registry.cn-hangzhou.cr.aliyuncs.com/openanolis/openjdk:17-8.6
 
 # 作者
 MAINTAINER abai
