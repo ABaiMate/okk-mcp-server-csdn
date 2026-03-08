@@ -1,5 +1,5 @@
 # 基础镜像，可以先执行 docker pull openjdk:17-jdk-slim
-FROM registry.cn-hangzhou.aliyuncs.com/library/openjdk:17-jdk-slim
+FROM registry.cn-hangzhou.aliyuncs.com/dragonwell/dragonwell:17-anolis-standard
 
 # 作者
 MAINTAINER abai
