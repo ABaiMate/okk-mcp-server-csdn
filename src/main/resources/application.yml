@@ -1,7 +1,8 @@
 csdn:
   api:
     categories: Java场景面试宝典
-    cookie: ${CSDN_API_COOKIE:uuid_tt_dd=10_30706389210-1764042207244-777084; UserName=A_ABai; UserToken=28cf4e40527447778e21b77f29a9acc9;}
+    cookie: ${CSDN_API_COOKIE:uuid_tt_dd=10_20287133660-1749042697910-118142; UserName=A_ABai; UserToken=6e49377285444c92aa2a8c116f1f286a}
+
 
 spring:
   application:
