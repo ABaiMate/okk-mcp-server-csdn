@@ -1,4 +1,5 @@
-FROM openjdk:17-jdk-slim
+# 基础镜像：切换至龙蜥社区张家口节点 (解决杭州节点 DNS 解析失败问题)
+FROM anolis-registry.cn-zhangjiakou.cr.aliyuncs.com/openanolis/openjdk:17-8.6
 
 LABEL maintainer="abai"
 
