@@ -1,4 +1,4 @@
-FROM anolis-registry.cn-zhangjiakou.cr.aliyuncs.com/openanolis/openjdk:17-8.6
+FROM openjdk:17-jdk-slim
 
 LABEL maintainer="abai"
 
