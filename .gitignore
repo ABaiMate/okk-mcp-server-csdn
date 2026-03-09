@@ -2,7 +2,6 @@ target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
-!dist/*.jar
 
 # Ignore specific log files
 data/log/
@@ -40,3 +39,7 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+# allow packaged jar for ACR build
+!/dist/
+!/dist/*.jar
