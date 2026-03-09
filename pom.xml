@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.okkform.api</groupId>
-    <artifactId>mcp-server-csdn-job</artifactId>
+    <artifactId>mcp-server-csdn-app</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
